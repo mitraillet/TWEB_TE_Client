@@ -1,0 +1,8 @@
+{
+  "root": "/build",
+  "proxies": {
+    "/auth/": {
+      "origin": "https://tweb-te-server-steve-henriquet.herokuapp.com/auth/"
+    }
+  }
+}
