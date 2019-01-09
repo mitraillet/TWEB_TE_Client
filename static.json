@@ -1,7 +1,7 @@
 {
   "root": "build/",
   "routes": {
-    "/login": "login"
+    "/login": "index.js"
   },
   "proxies": {
     "/auth/login": {
