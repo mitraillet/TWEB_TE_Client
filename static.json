@@ -1,5 +1,9 @@
 {
   "root": "build/",
+  "clean_urls": false,
+  "routes": {
+    "/**": "index.html"
+  },
   "proxies": {
     "/auth/login": {
       "origin": "https://tweb-te-server-steve-henriquet.herokuapp.com/auth/login"
