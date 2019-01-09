@@ -15,7 +15,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:5000",
+  "proxy": "https://tweb-te-server-steve-henriquet.herokuapp.com:5000",
   "eslintConfig": {
     "extends": "react-app"
   },
