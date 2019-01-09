@@ -1,5 +1,8 @@
 {
   "root": "build/",
+  "routes": {
+    "/login": "login"
+  },
   "proxies": {
     "/auth/login": {
       "origin": "https://tweb-te-server-steve-henriquet.herokuapp.com/auth/login"
