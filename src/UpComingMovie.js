@@ -1,32 +1,12 @@
 import React, { Component } from 'react';
 
-class HomePage extends Component {
+class UpComingMovie extends Component {
   state = {
     films: null,
-    filmsSelectedId: []
-  }
-
-
-  handleOnClick = (e) => {
-    this.state.films.filter(movie => {
-      if (e.target.id == movie.id) {
-        let filmsSelectedIds = this.state.filmsSelectedId;
-        if(filmsSelectedIds.indexOf(movie.id) != -1){
-          filmsSelectedIds.splice(filmsSelectedIds.indexOf(movie.id), 1)
-        }
-        else {
-          filmsSelectedIds.push(movie.id);
-        }
-        this.setState({filmsSelectedId : filmsSelectedIds });
-        console.log(this.state.filmsSelectedId)
-
-        return null;
-      }
-    });
   }
   
   componentDidMount() {
-    fetch('https://api.themoviedb.org/3/movie/popular?page=1&api_key=f1be4bafe6f7cb0cb84f5948c5b75497')
+    fetch('https://api.themoviedb.org/3/movie/upcoming?page=1&api_key=f1be4bafe6f7cb0cb84f5948c5b75497')
       .then( results => {
         return results.json();
       }).then(data => {
@@ -53,4 +33,4 @@ class HomePage extends Component {
   }
 }
 
-export default HomePage;
+export default UpComingMovie;
