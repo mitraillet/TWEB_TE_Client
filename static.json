@@ -2,13 +2,5 @@
   "root": "build/",
   "routes": {
     "/**": "index.html"
-  },
-  "proxies": {
-    "/auth/login": {
-      "origin": "https://tweb-te-server-steve-henriquet.herokuapp.com/auth/login"
-    },
-    "/api/me": {
-      "origin": "https://tweb-te-server-steve-henriquet.herokuapp.com/api/me"
-    }
   }
 }
