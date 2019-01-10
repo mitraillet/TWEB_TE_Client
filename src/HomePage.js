@@ -19,9 +19,10 @@ class HomePage extends Component {
         }
         this.setState({filmsSelectedId : filmsSelectedIds });
         console.log(this.state.filmsSelectedId)
+
         return null;
       }
-    })
+    });
   }
   
   componentDidMount() {
